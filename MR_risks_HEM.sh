@@ -30,7 +30,7 @@ rm -r MetaGWAS_CAD_clumped_r0.05.clumped *.log *.nosex
 rm -r SNP.valid HO_clumped_raw.txt
 
 #Fit CAUSE and save results
-Rscript --vanilla cause_MR_stage2.R ${id}
+Rscript --vanilla cause_MR_stage2.R HO_clumped.txt
 cp cause_final.Rdata cause_${id}_to_HEM.Rdata
 rm -r cause_final.Rdata
 done
@@ -54,7 +54,7 @@ rm -r MetaGWAS_CAD_clumped_r0.05.clumped *.log *.nosex
 rm -r SNP.valid HO_clumped_raw.txt
 
 #Fit CAUSE and save results
-Rscript --vanilla cause_MR_stage2.R ${id}
+Rscript --vanilla cause_MR_stage2.R HO_clumped.txt
 cp cause_final.Rdata cause_HEM_to_${id}.Rdata
 rm -r cause_final.Rdata
 done
