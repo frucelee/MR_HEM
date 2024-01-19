@@ -124,8 +124,7 @@ rm(list = ls())
 bmi_exp_dat<-fread("HO_clumped_exposure.csv",header=T)
 df_total1 = data.frame()
 df_total10 = data.frame()
-test300<-read.table("123.txt",header=F)
-#jj in c(39:42,44,46:50,52:55,57:60,63:66,68:72,74:86,88:91,93:99,102:104,108,110:115,117:121,123:128,131:137,139:144,146:148,150,153:160,163:164,166,168:182,184:195,197:199,201,202:204,206:212,214:216,219:234,236:238,240:248)
+test300<-read.table("list.txt",header=F)
 mhc <- bmi_exp_dat %>%
     dplyr::arrange(chr.exposure, pos.exposure) %>%
     dplyr::filter(chr.exposure == 6) %>%
